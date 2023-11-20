@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish&display=swap');
+
+
+:root{
+    --bg-color: #2A2A47;
+    --bg-card-color: #4744C5;
+    --card-bg-color: #1F1F3C;
+    --text-color: #BDBDD3;
+    --input-area-bg-color: #696998;
+    --check-box-color: #38385F;
+}
+
+// font-family: 'Mulish', sans-serif;
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: var(--bg-color);
+    position: relative;
+}
+
+// container start
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    // bg-card start
+    .bg-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+        width: 350px;
+        height: 560px;
+        background: var(--bg-card-color);
+        border-radius: 16px;
+        position: absolute;
+        z-index: 0;
+
+        // card start
+        .card{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            position: absolute;
+            border-radius: 16px;
+            width: 400px;
+            height: 530px;
+            background: #1F1F3C;
+            color: var(--text-color);
+            padding: 40px;
+            box-sizing: border-box;
+
+            // h1 start
+            h1{
+                color: var(--text-color);
+                font-family: 'Merriweather', serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            // h1 ends
+
+            // header start
+            .header{            
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 5px;                
+                position: relative;
+
+                // label{
+                    // position: absolute;
+                    // margin-top: 10px;
+                // }
+
+                // input start
+                input{
+                    position: absolute;
+                    top: 25px;
+                    width: 240px;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    padding-left: 40px;
+
+                    border-radius: 5px;
+                    border: 2px solid var(--check-box-color);
+                    background: var(--bg-color);
+
+                    color: #696998;
+                    font-family: 'Mulish', sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                // input ends
+
+                // img start
+                img{
+                    position: absolute;
+                    top: 42px;
+                    left: 5px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--input-area-bg-color);
+                }
+                // img ends
+            }
+            // header ends
+
+            // main start
+            .main{
+                margin-top: 90px;
+                display: flex;
+                flex-direction:column;
+                gap: 15px;
+
+                p{
+                    font-family: 'Mulish', sans-serif;
+                    color: var(--text-color);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                
+                // options start
+                .options{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 15px;                
+
+                    // check ends
+                    .check{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        gap: 5px;
+
+                        color: var(--text-color);
+                        font-family: 'Mulish', sans-serif;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;                                  
+                        accent-color: var(--check-box-color);
+
+                        .checked{
+                            width: 23px;
+                            height: 23px;
+                            cursor: pointer;
+                            background-color: var(--check-box-color);
+                            color: var(--check-box-color);
+                            accent-color: var(--check-box-color);
+                        }                    
+                    }
+                // check ends
+
+                // check last child start
+                    .check:last-child{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 10px;
+                }
+                // check last child ends
+                }
+                // options ends
+            }
+            // experience ends
+
+
+            // footer start
+            .footer{
+                p{
+                    font-family: 'Mulish', sans-serif;
+                    color: var(--text-color);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                
+                // options start
+                .options{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 15px;                
+
+                    // check ends
+                    .check{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        gap: 5px;
+
+                        color: var(--text-color);
+                        font-family: 'Mulish', sans-serif;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;                                  
+                        accent-color: var(--check-box-color);
+
+                        .checked{
+                            width: 23px;
+                            height: 23px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            border: 2px solid #38385F;
+                            background: #2A2A47;
+                        }                    
+                    }
+                // check ends
+                }
+            }
+            // footer end
+        }
+        // card ends
+    }
+    // bg card ends
+}
+// container ends

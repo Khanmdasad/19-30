@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish&display=swap");
+:root {
+  --bg-color: #2A2A47;
+  --bg-card-color: #4744C5;
+  --card-bg-color: #1F1F3C;
+  --text-color: #BDBDD3;
+  --input-area-bg-color: #696998;
+  --check-box-color: #38385F;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: var(--bg-color);
+  position: relative;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .bg-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 560px;
+  background: var(--bg-card-color);
+  border-radius: 16px;
+  position: absolute;
+  z-index: 0;
+}
+.container .bg-card .card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 16px;
+  width: 400px;
+  height: 530px;
+  background: #1F1F3C;
+  color: var(--text-color);
+  padding: 40px;
+  box-sizing: border-box;
+}
+.container .bg-card .card h1 {
+  color: var(--text-color);
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .bg-card .card .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  position: relative;
+}
+.container .bg-card .card .header input {
+  position: absolute;
+  top: 25px;
+  width: 240px;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--check-box-color);
+  background: var(--bg-color);
+  color: #696998;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container .bg-card .card .header img {
+  position: absolute;
+  top: 42px;
+  left: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--input-area-bg-color);
+}
+.container .bg-card .card .main {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .bg-card .card .main p {
+  font-family: "Mulish", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .bg-card .card .main .options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.container .bg-card .card .main .options .check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color);
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  accent-color: var(--check-box-color);
+}
+.container .bg-card .card .main .options .check .checked {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background-color: var(--check-box-color);
+  color: var(--check-box-color);
+  accent-color: var(--check-box-color);
+}
+.container .bg-card .card .main .options .check:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.container .bg-card .card .footer p {
+  font-family: "Mulish", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .bg-card .card .footer .options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.container .bg-card .card .footer .options .check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color);
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  accent-color: var(--check-box-color);
+}
+.container .bg-card .card .footer .options .check .checked {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #38385F;
+  background: #2A2A47;
+}/*# sourceMappingURL=style.css.map */
