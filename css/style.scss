@@ -157,12 +157,13 @@ body{
                         accent-color: var(--check-box-color);
 
                         .checked{
+                            appearance: none;
                             width: 23px;
                             height: 23px;
                             cursor: pointer;
-                            background-color: var(--check-box-color);
-                            color: var(--check-box-color);
-                            accent-color: var(--check-box-color);
+                            border-radius: 5px;
+                            border: 2px solid #38385F;                            
+                            background-color: #2A2A47;
                         }                    
                     }
                 // check ends
@@ -218,9 +219,10 @@ body{
                             width: 23px;
                             height: 23px;
                             cursor: pointer;
+                            appearance: none;
                             border-radius: 5px;
                             border: 2px solid #38385F;
-                            background: #2A2A47;
+                            background-color: #2A2A47;
                         }                    
                     }
                 // check ends

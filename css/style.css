@@ -124,12 +124,15 @@ body {
   accent-color: var(--check-box-color);
 }
 .container .bg-card .card .main .options .check .checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 23px;
   height: 23px;
   cursor: pointer;
-  background-color: var(--check-box-color);
-  color: var(--check-box-color);
-  accent-color: var(--check-box-color);
+  border-radius: 5px;
+  border: 2px solid #38385F;
+  background-color: #2A2A47;
 }
 .container .bg-card .card .main .options .check:last-child {
   display: flex;
@@ -168,7 +171,10 @@ body {
   width: 23px;
   height: 23px;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 5px;
   border: 2px solid #38385F;
-  background: #2A2A47;
+  background-color: #2A2A47;
 }/*# sourceMappingURL=style.css.map */
